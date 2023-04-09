@@ -50,7 +50,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-         
+        <button className="bg-gradient-to-r hidden md:block  from-blue-400 via-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded">Star Applying </button>
 
         
         {/* </div> */}
