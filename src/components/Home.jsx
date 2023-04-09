@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
+    <>
     <div className='my-container flex flex-col items-center justify-between lg:flex-row'>
       {/* Text Content */}
       <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
@@ -20,19 +21,24 @@ const Home = () => {
         <div className='flex flex-col items-center md:flex-row'>
           <Link to='/' className='btn md:w-auto md:mr-4'>
             <div className='inline-flex items-center justify-center w-full h-full'>
-            <button className="bg-gradient-to-r hidden md:block  from-blue-400 via-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded">Star Applying </button>
+            <button className="bg-gradient-to-r hidden md:block  from-blue-400 via-indigo-500 to-purple-500 text-white font-bold py-2 px-4 rounded">Get Started </button>
             </div>
           </Link>
  
         </div>
       </div>
-      {/* Lottie Animation */}
+      
       <div className='relative lg:w-1/2 '>
         <div className='w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96'>
           <img className='object-cover' src={jobProfile} alt="jobProfile" />
         </div>
       </div>
+ 
     </div>
+      {/* Job Category List */}
+      <h1 className='text-center text-3xl  font-semibold'>Job Category List</h1>
+      <p className='text-center mt-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+    </>
   )
 }
 
