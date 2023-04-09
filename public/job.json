@@ -1,0 +1,28 @@
+[
+    {
+      "category_id": 1,
+      "category_name": "Accounting and Finance",
+      "icon": "FaMoneyBill",
+      "dec": "300 Jobs Available"
+    },
+    {
+      "category_id": 2,
+      "category_name": "Creative Design",
+      "icon": "FaFileInvoiceDollar",
+      "dec": "150 Jobs Available"
+    },
+    {
+      "category_id": 3,
+      "category_name": "Marketing & Sales",
+      "icon": "IoMdMegaphone",
+      "dec": "100 Jobs Available"
+    },
+    {
+      "category_id": 4,
+      "category_name": "Engineering Job",
+      "icon": "RiBankFill",
+      
+      "dec": "200 Jobs Available"
+    }
+    
+  ]

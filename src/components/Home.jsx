@@ -1,6 +1,7 @@
 import React from 'react'
 import jobProfile from "../assets/jobman.jpg" 
 import { Link } from 'react-router-dom'
+import Jobscategory from './Jobscategory'
 
 const Home = () => {
   return (
@@ -38,6 +39,9 @@ const Home = () => {
       {/* Job Category List */}
       <h1 className='text-center text-3xl  font-semibold'>Job Category List</h1>
       <p className='text-center mt-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+      <div className="job-category">
+        <Jobscategory />
+      </div>
     </>
   )
 }
