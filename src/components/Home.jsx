@@ -2,11 +2,14 @@ import React from 'react'
 import jobProfile from "../assets/jobman.jpg" 
 import { Link } from 'react-router-dom'
 import Jobscategory from './Jobscategory'
+import Features from './Features'
 
 const Home = () => {
   return (
     <>
-    <div className='my-container flex flex-col items-center justify-between lg:flex-row'>
+    <div className='my-container'>
+
+    <div className=' flex flex-col items-center justify-between lg:flex-row'>
       {/* Text Content */}
       <div className='mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0'>
         <div className='max-w-xl mb-6 lg:mt-8'>  
@@ -36,12 +39,21 @@ const Home = () => {
       </div>
  
     </div>
-      {/* Job Category List */}
+      {/* Job Category List ---------------------*/}
       <h1 className='text-center text-3xl  font-semibold'>Job Category List</h1>
       <p className='text-center mt-3'>Explore thousands of job opportunities with all the information you need. Its your future</p>
       <div className="job-category">
         <Jobscategory />
       </div>
+      {/* Featured Jobs section --------- */}
+
+      <h1 className='text-center text-4xl font-semibold '>Featured Jobs</h1>
+      <p  className='text-center mt-5'> Explore thousands of job opportunities with all the information you need. Its your future</p>
+      <div className='mt-24'>
+        <Features />
+      </div>
+    </div>
+
     </>
   )
 }

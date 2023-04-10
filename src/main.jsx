@@ -6,11 +6,13 @@ import App from './App'
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
-import About from './components/About';
+} from "react-router-dom"; 
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Statistics from './components/Statistics';
+import Blog from './components/blog';
+import Features from './components/Features';
+import AppliedJob from './components/AppliedJob';
   
 const router = createBrowserRouter([
   {
@@ -23,14 +25,18 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       // {
-      //   path: "shop",
-      //   element: <Shop />,
+      //   path: "applied-jobs",
+      //   element: <AppliedJob />,
       //   loader: () => fetch('products.json')
       // },
        
       {
         path: "statistics",
         element: <Statistics />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },

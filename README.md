@@ -1,6 +1,6 @@
-# HeroGadget Starter Repository
+# Patagonia Website
 
- Best E-commerce platform for buying high quality Smart Home Appliances at extremely affordable Price.
+ Best Job Protal platform for apply high quality Job with extremely Salary.
 
 ## Live Link
 Hosted in Netlify -> [HeroGadget](https://herogadget.netlify.app/)
