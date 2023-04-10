@@ -11,7 +11,7 @@ export default function Features() {
     .then(data => setFeatures(data))
   },[])
   return (
-    <div className='grid md:grid-cols-2 text-center mx-auto'>
+    <div className='grid gap-4 md:grid-cols-2 text-center mx-auto'>
     {
       features.map(feature => <Feature key={feature.id} feature={feature}/>)
     }
