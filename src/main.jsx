@@ -13,6 +13,7 @@ import Statistics from './components/Statistics';
 import Blog from './components/blog';
 import Features from './components/Features';
 import AppliedJob from './components/AppliedJob';
+import SingleJob from './components/SingleJob';
   
 const router = createBrowserRouter([
   {
@@ -24,11 +25,16 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      // {
-      //   path: "applied-jobs",
-      //   element: <AppliedJob />,
-      //   loader: () => fetch('products.json')
-      // },
+      {
+        path: "singlejob/:id",
+        element: <SingleJob />,
+        loader: () => fetch('data.json')
+      },
+      {
+        path: "job",
+        element: <AppliedJob />
+      },
+       
        
       {
         path: "statistics",

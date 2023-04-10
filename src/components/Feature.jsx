@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Feature({feature}) {
+  const {id} =feature
   return (
     <>
      <div className="bg-white rounded-lg overflow-hidden shadow-md">
@@ -16,9 +18,11 @@ function Feature({feature}) {
         </button>
         <br />
         <span className="text-gray-700 mt-2">{feature.location}</span>  <span className="text-gray-700 mt-2 inline-block">{feature.salary}</span>
-        <button className="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-2">
+       <Link to={`singlejob/${id}`}>
+       <button className="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-2">
           View Details
         </button>
+       </Link>
       </div>
     </div>
     </>
