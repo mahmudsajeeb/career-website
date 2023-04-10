@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
+import Feature from './Feature'
 
 export default function Features() {
 
-  const featureData = useLoaderData()
-  console.log(featureData)
+  const [features,setFeatures] = useState([])
+  useEffect(()=>{
+    fetch('data.json')
+    .then(res => res.json())
+    .then(data => setFeatures(data))
+  },[])
   return (
-    <div>Features</div>
+    <div className='grid md:grid-cols-2 text-center mx-auto'>
+    {
+      features.map(feature => <Feature key={feature.id} feature={feature}/>)
+    }
+    </div>
   )
 }
