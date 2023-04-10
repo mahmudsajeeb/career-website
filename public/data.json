@@ -69,6 +69,60 @@
             "description":"A Technical Database Engineer should have strong analytical and problem-solving skills, excellent communication and teamwork skills, and a deep understanding of database concepts, data modeling, and database architecture. They should also have experience with database management systems (DBMS), programming languages, and database-related tools and technologies.",
              "res": "Technical Database Engineers play a critical role in ensuring the reliability, scalability, and security of an organization's databases. They are responsible for maintaining the performance and availability of databases and providing technical support and guidance to other IT staff and end-users"
             
+},
+{
+    "id": "623853b2614ad5aba31121fdd1",
+     "index": 4, 
+     "phone":"000180333",
+     "email" :"email@gmail.com",
+     "picture": "../src/assets/All Images/google-1-1 1.png",
+     "name": "Google LLC",
+     "title": "Technical Database Engineer",
+     "category1": "Full time",
+     "category2": "Remote",
+     "category" :"Onsite",
+     "job":"Product Designer",
+     "location": "Dhaka,Bangladesh",
+     "salary": "100k-150k",
+     "description":"A Technical Database Engineer should have strong analytical and problem-solving skills, excellent communication and teamwork skills, and a deep understanding of database concepts, data modeling, and database architecture. They should also have experience with database management systems (DBMS), programming languages, and database-related tools and technologies.",
+      "res": "Technical Database Engineers play a critical role in ensuring the reliability, scalability, and security of an organization's databases. They are responsible for maintaining the performance and availability of databases and providing technical support and guidance to other IT staff and end-users"
+     
+},
+{
+    "id": "623853b2614ad5aba311fddbc",
+     "index": 5, 
+     "phone":"000180333",
+     "email" :"email@gmail.com",
+     "picture": "../src/assets/All Images/2b7f6bdfbc2aacb201fd88d96d6cfb71.jpg",
+     "name": "Google LLC",
+     "title": "Technical Database Engineer",
+     "category1": "Full time",
+     "category2": "Remote",
+     "category" :"Onsite",
+     "job":"Product Designer",
+     "location": "Dhaka,Bangladesh",
+     "salary": "100k-150k",
+     "description":"A Technical Database Engineer should have strong analytical and problem-solving skills, excellent communication and teamwork skills, and a deep understanding of database concepts, data modeling, and database architecture. They should also have experience with database management systems (DBMS), programming languages, and database-related tools and technologies.",
+      "res": "Technical Database Engineers play a critical role in ensuring the reliability, scalability, and security of an organization's databases. They are responsible for maintaining the performance and availability of databases and providing technical support and guidance to other IT staff and end-users"
+     
+},
+{
+    "id": "623853b2614ad5aba311fddbcb",
+     "index": 6, 
+     "phone":"000180333",
+     "email" :"email@gmail.com",
+     "picture": "../src/assets/All Images/attachment_125996725.png",
+     "name": "Google LLC",
+     "title": "Technical Database Engineer",
+     "category1": "Full time",
+     "category2": "Remote",
+     "category" :"Onsite",
+     "job":"Product Designer",
+     "location": "Dhaka,Bangladesh",
+     "salary": "100k-150k",
+     "description":"A Technical Database Engineer should have strong analytical and problem-solving skills, excellent communication and teamwork skills, and a deep understanding of database concepts, data modeling, and database architecture. They should also have experience with database management systems (DBMS), programming languages, and database-related tools and technologies.",
+      "res": "Technical Database Engineers play a critical role in ensuring the reliability, scalability, and security of an organization's databases. They are responsible for maintaining the performance and availability of databases and providing technical support and guidance to other IT staff and end-users"
+     
 }
 ]
    
