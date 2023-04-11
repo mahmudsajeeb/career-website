@@ -10,10 +10,12 @@ import {
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Statistics from './components/Statistics';
-import Blog from './components/blog';
-import Features from './components/Features';
+ 
 import AppliedJob from './components/AppliedJob';
 import SingleJob from './components/SingleJob';
+import Blog from './components/Blog';
+import { productsAndCartData } from './loaders/getCart&ProductsData';
+
   
 const router = createBrowserRouter([
   {
@@ -26,18 +28,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "singlejob/:id",
+        path: "/Singlejob/:id",
         element: <SingleJob />,
         loader: () => fetch('data.json')
       },
       {
-        path: "job",
-        element: <AppliedJob />
+        path: "/applied-jobs",
+        element: <AppliedJob />,
+        loader: productsAndCartData
       },
        
        
       {
-        path: "statistics",
+        path: "Statistics",
         element: <Statistics />,
       },
       {

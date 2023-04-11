@@ -1,101 +1,56 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-const Blog = () => {
-  return (
-    <section className='bg-gray-100 text-gray-900'>
-      <div className='container flex flex-col items-center p-4 mx-auto md:p-8'>
-        <h1 className='text-3xl font-bold leading-none text-center sm:text-4xl'>
-          Help Center
-        </h1>
-        <div className='relative mt-6 mb-12'>
-          <span className='absolute inset-y-0 flex items-center pl-2 mx-auto'>
-            <button
-              type='submit'
-              title='Search'
-              className='p-1 focus:outline-none focus:ring'
-            >
-              <svg
-                fill='currentColor'
-                viewBox='0 0 512 512'
-                className='w-4 h-4 text-gray-900'
-              >
-                <path d='M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z'></path>
-              </svg>
-            </button>
-          </span>
-          <input
-            type='search'
-            name='Search'
-            placeholder='Search...'
-            className='w-full py-3 pl-12 text-sm rounded-full sm:w-96 focus:outline-none bg-gray-200 text-gray-800 focus:bg-gray-300'
-          />
-        </div>
-        <div className='flex flex-col w-full divide-y sm:flex-row sm:divide-y-0 sm:divide-x sm:px-8 lg:px-12 xl:px-32 divide-gray-700'>
-          <div className='flex flex-col w-full divide-y divide-gray-700'>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Billing
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Support
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Account
-            </Link>
+ import React from 'react'
+ 
+ export default function Blog() {
+   return (
+  
+      
+      <div className='max-w-screen-xl text-center sm:mx-auto'>
+        <div className='grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2'>
+          <div className='space-y-8'>
+            <div>
+              <p className='mb-4 text-xl font-medium'>
+              When should you use context API?
+              </p>
+              <p className='text-gray-700'>
+              The Context API in React should be used when you need to pass data or state down through multiple levels of your component tree, without having to manually pass props to each individual component. It is a way to share data between components that are not directly related to each other, avoiding the need to pass data through intermediary components that do not use the data themselves.
+                <br />
+                
+              </p>
+            </div>
+            <div>
+              <p className='mb-4 text-xl font-medium'>
+              What is a custom hook?
+              </p>
+              <p className='text-gray-700'>
+              Custom hooks are built on top of the existing React Hooks API, and can use other hooks internally to provide functionality. They can handle complex state management, side effects, and other features, just like regular React components.
+                <br />
+                 
+             </p>
+            <div>
+              <p className='mb-4 text-xl font-medium'>
+              What is useRef?
+              </p>
+              <p className='text-gray-700'>
+              useRef can also be used to store any mutable value, not just DOM elements. This can be useful when you need to keep track of a value across re-renders without triggering a re-render of the component.
+              </p>
+            </div>
           </div>
-          <div className='flex flex-col w-full divide-y divide-gray-700'>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Features
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Contact us
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              My orders
-            </Link>
-          </div>
-          <div className='hidden w-full divide-y sm:flex-col sm:flex divide-gray-700'>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Enterprise
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Privacy
-            </Link>
-            <Link
-              to='/support'
-              className='flex items-center justify-center p-4 sm:py-8 lg:py-12'
-            >
-              Developers
-            </Link>
+          <div className='space-y-8'>
+            <div>
+              <p className='mb-4 text-xl font-medium'>
+              What is useMemo?
+              </p>
+              <p className='text-gray-700'>
+              In React, the useMemo hook is a function that can be used to memoize expensive calculations so that they are only recomputed when their dependencies change. This can help improve the performance of your application by avoiding unnecessary re-renders and calculations.
+                <br />
+                
+              </p>
+            </div>
+ 
           </div>
         </div>
       </div>
-    </section>
-  )
-}
-
-export default Blog
+     </div>
+   )
+ }
+ 

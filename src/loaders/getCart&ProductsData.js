@@ -1,11 +1,8 @@
-import { getShoppingCart } from "../utilis/fakeDB"
-
-
- 
+import { getShoppingCart } from "../utiliti/fakedb";
 
  const productsAndCartData = async() =>{
 
-  const productsData = await fetch('products.json')
+  const productsData = await fetch('data.json')
   const products = await productsData.json();
   const savedCart = getShoppingCart();
   // console.log(products,savedCart)

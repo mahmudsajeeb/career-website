@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData, useParams } from 'react-router-dom'
 import img from '../assets/All Images/Vector.png'
 import imgtwo from '../assets/All Images/Vector-1.png'
+import { addToDb } from '../../../../../../All class practice/9 semester/amazon/ema-john-simple/src/utilities/fakedb'
+// import { addToDb } from '../utiliti/fakedb'
 function SingleJob() {
   const [details,setDetails] = useState({})
   const dynamic = useParams()
   const dynamicId = dynamic.id;
   // console.log(dynamicId)
   const data = useLoaderData()
-  console.log(data)
+  // console.log(data)
 
   useEffect(()=>{
     if(data){
@@ -17,7 +19,9 @@ function SingleJob() {
     }
   },[])
 
-  console.log(details)
+  const applyButton = (id)=>{
+    addToDb(id)
+  }
   return (
     <>
      <div className='flex justify-between items-center'>
@@ -52,7 +56,7 @@ function SingleJob() {
           <p><span>Email</span>{details.email}</p>
           <span className="text-gray-700 mt-2">{details.location}</span> 
           
-          <button className="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-2">
+          <button onClick={()=>applyButton(dynamicId)} className="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded mt-2">
             Apply Now
           </button>
         
