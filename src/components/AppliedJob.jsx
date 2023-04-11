@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
- 
+import img from '../assets/All Images/Vector.png'
+import imgtwo from '../assets/All Images/Vector-1.png'
 import { useLoaderData } from 'react-router-dom'
 // import { useLoaderData } from 'react-router-dom'
 
@@ -8,6 +9,13 @@ export default function AppliedJob() {
     
 
   return (
+    <>
+          <div className='flex justify-between items-center'>
+    <div > <img src={img} alt="" /></div>
+    <h1 className='text-4xl font-semibold'>Applied Job</h1>
+     <div><img src={imgtwo} alt="" /></div>
+    </div>
+    
     <div className='py-20 justify-center flex flex-col gap-5'>
          {
           cartArray.map(singleJob =>{
@@ -39,8 +47,10 @@ export default function AppliedJob() {
                 </div>
                </div>
              </div>
+             
           })
          }
     </div>
+    </>
   )
 }

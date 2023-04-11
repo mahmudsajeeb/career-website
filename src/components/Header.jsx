@@ -30,8 +30,8 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to='/applied-jobs'
-              aria-label='applied-jobs'
+              to='/appliedjobs'
+              aria-label='appliedjobs'
               title='Applied Jobs'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >

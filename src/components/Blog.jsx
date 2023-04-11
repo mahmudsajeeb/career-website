@@ -1,11 +1,17 @@
  import React from 'react'
- 
+ import img from '../assets/All Images/Vector.png'
+ import imgtwo from '../assets/All Images/Vector-1.png'
  export default function Blog() {
    return (
-  
+    <>
+    <div className='flex justify-between items-center'>
+    <div > <img src={img} alt="" /></div>
+    <h1 className='text-4xl font-semibold'>Blog Post</h1>
+     <div><img src={imgtwo} alt="" /></div>
+    </div>
       
       <div className='max-w-screen-xl text-center sm:mx-auto'>
-        <div className='grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2'>
+        <div className='  gap-16 row-gap-8 lg:grid-cols-2'>
           <div className='space-y-8'>
             <div>
               <p className='mb-4 text-xl font-medium'>
@@ -51,6 +57,7 @@
         </div>
       </div>
      </div>
+     </>
    )
  }
  
