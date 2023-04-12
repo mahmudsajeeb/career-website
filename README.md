@@ -3,7 +3,7 @@
  Best Job Protal platform for apply high quality Job with extremely Salary.
 
 ## Live Link
-Hosted in Netlify -> 
+Hosted in Netlify -> https://comforting-capybara-0d18aa.netlify.app/
 
 
 ## Complete Project
