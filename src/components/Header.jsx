@@ -8,8 +8,8 @@ const Header = () => {
       <div className='relative flex items-center justify-between'>
         <Link
           to='/'
-          aria-label='HeroGadget'
-          title='HeroGadget'
+          aria-label='Patagonia '
+          title='Patagonia '
           className='inline-flex items-center'
         >
           
@@ -109,7 +109,7 @@ const Header = () => {
                   <ul className='space-y-4'>
                     <li>
                       <Link
-                        to='/applied-jobs
+                        to='/appliedjobs
 '
                         aria-label='applied-jobs'
                         title='applied-jobs'

@@ -6,7 +6,7 @@ function SingleCategory({job}) {
   return (
     <>
 
-    <div className='rounded-md shadow-md p-10 bg-purple-100'>
+    <div className='rounded-md   p-10 shadow-xl'>
       <img className='w-16 mb-20' src={job.img}/>
       <h1>{job.category_name}</h1>
       <p className='text-gray-400	'>{job.dec}</p>
